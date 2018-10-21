@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算1~100的偶数和</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var total=0;
+    var  i=1;
+    while (i<=100){
+        if (i%2==1) //奇数
+        {
+            i++;
+            continue;
+        }
+        total+=i;
+        i++;
+    }
+    alert(total);
+</script>
+</body>
+</html>
