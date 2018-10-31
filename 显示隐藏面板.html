@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示隐藏面板</title>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#ww").click(function () {
+                $("#div1").slideToggle("slow")
+
+            })
+
+        })
+    </script>
+    <style type="text/css">
+        #div1,#ww
+        {
+            padding:8px;
+            text-align:center;
+            background-color:#e5eecc;
+            border:solid 1px #c3c3c3;
+        }
+        #div1
+        {
+            padding:80px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">点我</div>
+<div id="ww">这是隐藏/显示的文字</div>
+</body>
+</html>
