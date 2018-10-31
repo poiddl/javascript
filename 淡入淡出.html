@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淡入淡出</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div").fadeToggle("slow");
+                $("#div2").fadeToggle(2500);
+
+            })
+
+        })
+    </script>
+</head>
+<body>
+<button>点击淡入淡出</button>
+<p id="div" style="width: 140px;height: 120px;background-color: chartreuse "></p>
+<p id="div2" style="width: 140px;height: 120px;background-color:brown"></p>
+</body>
+</html>
