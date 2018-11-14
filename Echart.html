@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="new/echarts.js"></script>
+</head>
+<body>
+<!--为Echart 准备一个具备大小(宽高)的Dom-->
+<div id="main"style="width:800px;height: 400px"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echart实例
+    var  myChart = echarts.init(document.getElementById('main'));
+    // 指定图标的配置项和数据
+var option = {
+    title:{
+        text:'销售量'
+    },
+    tooltip:{},
+    legend:{
+      data:['外设销售情况']
+    },
+
+xAxis: {
+type: 'category',
+data: ['鼠标', '键盘', '音响', '鼠标垫', '屏幕', '显卡坞', '散热器']
+},
+yAxis: {
+type: 'value'
+},
+series: [{
+    name:'外设销售情况',
+data: [120, 200, 150, 80, 70, 110, 130],
+type: 'bar'
+}]
+};
+// 使用刚指定的配置项和数据显示图表
+myChart.setOption(option);
+</script>
+</body>
+</html>
